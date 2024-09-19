@@ -1,0 +1,23 @@
+{
+  "name": "starter",
+  "version": "10.8.1",
+  "description": "trilio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css",
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "prefix:css": "postcss ",
+    "compress:css": "sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "developer",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.78.0"
+  }
+}
